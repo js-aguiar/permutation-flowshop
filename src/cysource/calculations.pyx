@@ -2,7 +2,7 @@
 """
 permutation-flowshop repository
 
-Cython implementation of computer time expensive functions.
+Cython implementation of computationally expensive functions.
 """
 
 from numpy import zeros
@@ -28,9 +28,8 @@ cpdef taillard_acceleration(int[:] sequence, int[:,:] processing_times, int inse
 		best_position: Index for position with min makespan.
 		best_makespan: Makespan after inserting the job
 	"""
-	# Static C arrays
-	# Faster than using memory view; could also use malloc
-	# for dynamic memory allocation
+	# Static C arrays - fastest option, but be carefull 
+	# since this is allocated on the stack
 	cdef int e[801][61]
 	cdef int q[801][61]
 	cdef int f[801][61]

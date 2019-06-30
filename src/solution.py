@@ -6,7 +6,7 @@ that are implemented in C (through Cython library).
 """
 
 import numpy as np
-import calculations
+from cysource import calculations
 
 class Solution(object):
     """Implements functions and data structures for the problem and solution.

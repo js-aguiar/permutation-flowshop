@@ -16,7 +16,7 @@ def import_taillard():
         Taillard, E.D. "Benchmarks for basic scheduling problems",
         EJOR vol. 64,pp. 78-285, 1993.
     """
-    directory = "benchmark instances/taillard instances/"
+    directory = "../benchmark instances/taillard instances/"
     instances_names = list()
 
     # Generate instance names
@@ -40,7 +40,7 @@ def import_vrf_small():
         "New hard benchmark for flowshop scheduling problems minimising makespan",
         EJOR vol. 240, pp. 666-677, 2015.
     """
-    directory = "benchmark instances/vrf instances/Small/"
+    directory = "../benchmark instances/vrf instances/Small/"
     instances_names = list()
 
     # Generate instance names
@@ -61,7 +61,7 @@ def import_vrf_large():
         "New hard benchmark for flowshop scheduling problems minimising makespan",
         EJOR vol. 240, pp. 666-677, 2015.
     """
-    directory = "vrf instances/Large/"
+    directory = "../benchmark instances/vrf instances/Large/"
     instances_names = list()
 
     # Generate instance names
